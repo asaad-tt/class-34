@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* ############### service section start css ################# */
+.service-section{
+    margin-top: 40px;
+}
+.service-section .service-title{}
+.service-section .service-title h5 {
+	color: #3763EB;
+	font-size: 17px;
+	font-weight: 400;
+}
+.service-section .service-title h2{
+    position: relative;
+    width: 39%;
+}
+.service-section .service-title h2::after{
+    content: "";
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 51px;
+    height: 2px;
+    background-color:#3763EB ;
+}
+.service-section .service-title p{
+    margin-top: 26px;
+}
+/* ############### service section end css ################# */
+
+
+/* ################service item start  ###################*/
+.service-item{
+    background: url(./service-patern.png) no-repeat bottom left ;
+}
+.service-item-1 {
+    
+	background: #F6F9FC;
+	padding: 30px 20px;
+	border-radius: 15px;
+    transition: .6s
+}
+.service-item-1 h5 {
+	margin-bottom: 20px;
+    color: #000;
+}
+.service-item-1 span {
+	background: #3763EB;
+	color: #fff;
+	padding: 10px;
+	margin: 91px 0;
+	border-radius: 25px 26px 25px 0;
+	font-size: 20px;
+}
+.service-item-1 p {
+	margin-top: 48px;
+	color: #676767 ;
+    position: relative;
+}
+.service-item-1 p::before {
+	content: "";
+	position: absolute;
+	top: -15px;
+	left: 0;
+	width: 41px;
+	height: 2px;
+	background: #3763EB;
+    transition: .6s;
+}
+.service-item-1:hover{
+    background: #3763EB;
+   
+}
+.service-item-1:hover p::before{
+    background: #fff;
+    transform: scalex(2)
+}
+
+.service-item-1:hover h5{
+    color: #fff;
+}
+.service-item-1:hover p{
+    color: #fff;
+}
+.service-item-1:hover span{
+    background: #fff;
+    color: #3763EB;
+}
+/* ################service item start  ###################*/
+
+
+/* ################animation setion start ################ */
+.animation-section {
+	background: url(./video-bg.jpg) no-repeat center center / cover;
+	height: 600px;
+	position: relative;
+	z-index: 9;
+	margin-top: 50px;
+}
+.animation-section::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .6;
+    z-index: -1;
+}
+.animation-section .animation-plot{
+   text-align: center;
+   margin-top:50px ;
+   color: #fff;
+   position: relative;
+}
+.animation-plot h5 {
+	font-weight: 400;
+}
+.animation-plot h2{
+    position: relative;
+}
+.animation-plot h2::after {
+	content: "";
+	position: absolute;
+	top: 53px;
+	left: 49%;
+	width: 49px;
+	height: 2px;
+	background: #fff;
+}
+.animation-plot p {
+	width: 44%;
+	margin: 33px auto;
+}
+.play-animation-btn {
+	width: 90px;
+	height: 90px;
+	display: inline-block;
+	font-size: 60px;
+	text-align: center;
+	line-height: 90px;
+	border-radius: 50%;
+	position: absolute;
+	right: 49%;
+	bottom: 185px;
+	color: red;
+}
+.play-animation-btn::before{
+    content: "";
+    width: 90px;
+    height: 90px;    
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    border-radius: 50%;
+    animation: playbtn 1.6s ease-out infinite;
+}
+@keyframes playbtn{
+    0%{
+        transform: scale(0);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: .7;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+/* ################animation setion end ################ */
